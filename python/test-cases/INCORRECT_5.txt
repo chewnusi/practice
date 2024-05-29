@@ -1,0 +1,54 @@
+from cryptography.fernet import Fernet
+import json
+import getpass
+
+class PasswordRecord:
+    def __init__(self, service, username, password):
+        self.service = service
+        self.username = username
+        self.password = password
+
+    def __str__(self):
+        return f"Service: {self.service}, Username: {self.username}, Password: {self.password}"
+
+class PasswordManager:
+    def __init__(self, key):
+        self.records = {}
+        self.cipher = Fernet(key)
+
+    def add_record(self, service, username, password):
+        self.records[service] = PasswordRecord(service, username, password)
+
+    def find_password(self, service):
+        if service in self.records:
+            return self.records[service].password
+        return None
+
+    def change_password(self, service, new_password):
+        if service in self.records:
+            self.records[service].password = new_password
+        else:
+            raise Exception(f"Service '{service}' not found.")
+
+    def delete_record(self, service):
+        if service in self.records:
+            del self.records[service]
+        else:
+            raise Exception(f"Service '{service}' not found.")
+
+    def save_to_file(self, filename):
+        data = {service: {'username': record.username, 'password': record.password} for service, record in self.records.items()}
+        encrypted_data = self.cipher.encrypt(json.dumps(data).encode())
+        file = open(filename, 'wb')
+        file.write(encrypted_data)
+
+    def load_from_file(self, filename):
+        file = open(filename, 'rb')
+        encrypted_data = file.read()
+        data = json.loads(self.cipher.decrypt(encrypted_data).decode())
+        self.records = {service: PasswordRecord(service, info['username'], info['password']) for service, info in data.items()}
+
+
+
+def generate_key():
+    return Fernet.generate_key()

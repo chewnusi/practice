@@ -1,0 +1,1 @@
+Select students from the table "students" who were born after 2000 (inclusive). Select the first name (first_name), last name (last_name), and date of birth (birth_date).

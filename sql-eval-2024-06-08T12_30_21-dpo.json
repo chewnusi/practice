@@ -1,0 +1,386 @@
+[
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task1.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK1.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task2.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK2.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task3.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK3.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "---\nCritical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted\n---"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task4.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK4.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "---\nCritical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted\n---"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task5.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK5.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task6.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK6.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task7.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK7.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- None\n\nFinal Decision:\nTask has been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task8.md",
+      "solutionFile": "./test-cases/CORRECT1_TASK8.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement is missing the `enrollment_date` field in the SELECT clause.\n- The SQL statement is sorting by `enrollment_date` in ascending order instead of descending order.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task1.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK1.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The condition in the WHERE clause is incorrect. It should be `>= '2000-01-01'` to select students born after 2000 (inclusive).\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task2.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK2.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement uses the wrong wildcard pattern. It should use 'Jo%' instead of '%Jo%' to match names starting with \"Jo\".\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task3.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK3.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement does not include the city 'Chicago' as specified in the problem statement.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task4.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK4.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The course name in the problem statement is \"Mathematics\", but the SQL statement uses 'Math'.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task5.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK5.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The clause \"GROUP WITH\" should be \"GROUP BY\".\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task6.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK6.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement joins the \"students\" table with the \"grades\" table instead of the \"courses\" table.\n- The \"courses\" table is not included in the SQL statement.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task7.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK7.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- Incorrect JOIN syntax: The correct syntax is `ON` instead of `BY`.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task8.md",
+      "solutionFile": "./test-cases/INCORRECT1_TASK8.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The selected fields include \"birth_date\" instead of \"enrollment_date\".\n- The \"enrollment_date\" field is not included in the selected fields.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task1.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK1.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The birth_date condition is incorrect. It should check for dates after 2000, not 1960.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task2.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK2.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement uses 'J%' instead of 'Jo%' to filter names starting with \"Jo\".\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task3.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK3.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The cities listed in the WHERE clause ('San Francisco', 'Boston', 'Miami') do not match the cities specified in the problem statement ('New York', 'Los Angeles', 'Chicago').\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task4.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK4.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The resulting column name should be \"total_math_students\" instead of \"total_students\".\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task5.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK5.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The HAVING clause should filter cities with more than 10 students, not 5.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task6.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK6.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The SQL statement does not include the `course_name` field in the SELECT clause, which is required by the problem statement.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task7.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK7.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "Critical errors:\n\n- The grade range in the WHERE clause is incorrect. It should be BETWEEN 80 AND 90, not BETWEEN 70 AND 80.\n\nFinal Decision:\nTask has not been accepted"
+    ],
+    "rejected": [],
+    "vars": {
+      "taskStatement": "./test-cases/tasks/task8.md",
+      "solutionFile": "./test-cases/INCORRECT2_TASK8.txt"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{task}}', fs.readFileSync(vars.taskStatement, 'utf8'))\n  .replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  }
+]

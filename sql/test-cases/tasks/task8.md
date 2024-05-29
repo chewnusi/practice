@@ -1,0 +1,1 @@
+Select the names and surnames of the students whose grade is between 80 and 90. Select the first name (first_name), last name (last_name), and grade (grade) using the tables "students" and "grades".

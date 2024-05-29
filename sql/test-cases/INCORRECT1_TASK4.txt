@@ -1,0 +1,3 @@
+SELECT student_id, city
+FROM studentLocations
+WHERE city = 'New York' OR city = 'Los Angeles';

@@ -1,0 +1,177 @@
+tests:
+  - description: '#1 CORRECT TASK 1'
+    vars:
+      taskStatement: ./test-cases/tasks/task1.md
+      solutionFile: ./test-cases/CORRECT1_TASK1.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'          
+  - description: '#2 CORRECT TASK 2'
+    vars:
+      taskStatement: ./test-cases/tasks/task2.md
+      solutionFile: ./test-cases/CORRECT1_TASK2.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'           
+  - description: '#3 CORRECT TASK 3'
+    vars:
+      taskStatement: ./test-cases/tasks/task3.md
+      solutionFile: ./test-cases/CORRECT1_TASK3.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#4 CORRECT TASK 4'
+    vars:
+      taskStatement: ./test-cases/tasks/task4.md
+      solutionFile: ./test-cases/CORRECT1_TASK4.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#5 CORRECT TASK 5'
+    vars:
+      taskStatement: ./test-cases/tasks/task5.md
+      solutionFile: ./test-cases/CORRECT1_TASK5.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#6 CORRECT TASK 6'
+    vars:
+      taskStatement: ./test-cases/tasks/task6.md
+      solutionFile: ./test-cases/CORRECT1_TASK6.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#7 CORRECT TASK 7 '
+    vars:
+      taskStatement: ./test-cases/tasks/task7.md
+      solutionFile: ./test-cases/CORRECT1_TASK7.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#8 CORRECT TASK 8'
+    vars:
+      taskStatement: ./test-cases/tasks/task8.md
+      solutionFile: ./test-cases/CORRECT1_TASK8.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'   
+  - description: '#1 INCORRECT TASK 1 query is in ascending order, not descending'
+    vars:
+      taskStatement: ./test-cases/tasks/task1.md
+      solutionFile: ./test-cases/INCORRECT1_TASK1.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'       
+  - description: '#2 INCORRECT TASK 2 query selects students born before 2000'
+    vars:
+      taskStatement: ./test-cases/tasks/task2.md
+      solutionFile: ./test-cases/INCORRECT1_TASK2.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'   
+  - description: '#3 INCORRECT TASK 3 query selects names that contain "Jo" anywhere, not just at the beginning'
+    vars:
+      taskStatement: ./test-cases/tasks/task3.md
+      solutionFile: ./test-cases/INCORRECT1_TASK3.txt
+    assert:
+      - type: contains
+        value: 'not been accepted' 
+  - description: '#4 INCORRECT TASK 4 query does not include Chicago'
+    vars:
+      taskStatement: ./test-cases/tasks/task4.md
+      solutionFile: ./test-cases/INCORRECT1_TASK4.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'          
+  - description: '#5 INCORRECT TASK 5 query uses the incorrect course name'
+    vars:
+      taskStatement: ./test-cases/tasks/task5.md
+      solutionFile: ./test-cases/INCORRECT1_TASK5.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'  
+  - description: '#6 INCORRECT TASK 6 query has wrong formulation'
+    vars:
+      taskStatement: ./test-cases/tasks/task6.md
+      solutionFile: ./test-cases/INCORRECT1_TASK6.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'         
+  - description: '#7 INCORRECT TASK 7 query joins the wrong table'
+    vars:
+      taskStatement: ./test-cases/tasks/task7.md
+      solutionFile: ./test-cases/INCORRECT1_TASK7.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'          
+  - description: '#8 INCORRECT TASK 8 query uses wrong syntax'
+    vars:
+      taskStatement: ./test-cases/tasks/task8.md
+      solutionFile: ./test-cases/INCORRECT1_TASK8.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'  
+  - description: '#9 INCORRECT TASK 1 query selects birth_date instead of enrollment_date'
+    vars:
+      taskStatement: ./test-cases/tasks/task1.md
+      solutionFile: ./test-cases/INCORRECT2_TASK1.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'          
+  - description: '#10 INCORRECT TASK 2 query uses the wrong year in the condition'
+    vars:
+      taskStatement: ./test-cases/tasks/task2.md
+      solutionFile: ./test-cases/INCORRECT2_TASK2.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'  
+  - description: '#11 INCORRECT TASK 3 query selects names that start with "J" instead of "Jo"'
+    vars:
+      taskStatement: ./test-cases/tasks/task3.md
+      solutionFile: ./test-cases/INCORRECT2_TASK3.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'     
+  - description: '#12 INCORRECT TASK 4 query includes the wrong cities'
+    vars:
+      taskStatement: ./test-cases/tasks/task4.md
+      solutionFile: ./test-cases/INCORRECT2_TASK4.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'     
+  - description: '#13 INCORRECT TASK 5 query uses a different alias for the result column'
+    vars:
+      taskStatement: ./test-cases/tasks/task5.md
+      solutionFile: ./test-cases/INCORRECT2_TASK5.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'   
+  - description: '#14 INCORRECT TASK 6 query includes cities with more than 5 students instead of 10'
+    vars:
+      taskStatement: ./test-cases/tasks/task6.md
+      solutionFile: ./test-cases/INCORRECT2_TASK6.txt
+    assert:
+      - type: contains
+        value: 'not been accepted' 
+  - description: '#15 INCORRECT TASK 7 query uses a LEFT JOIN instead of an INNER JOIN'
+    vars:
+      taskStatement: ./test-cases/tasks/task7.md
+      solutionFile: ./test-cases/INCORRECT2_TASK7.txt
+    assert:
+      - type: contains
+        value: 'not been accepted' 
+  - description: '#16 INCORRECT TASK 8 query uses the wrong grade range'
+    vars:
+      taskStatement: ./test-cases/tasks/task8.md
+      solutionFile: ./test-cases/INCORRECT2_TASK8.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'  
+providers:
+  - id: openai:chat:gpt-4o
+    config:
+      temperature: 0.01
+      top_p: null
+
+prompts: [prompt.js]
+output: output.md

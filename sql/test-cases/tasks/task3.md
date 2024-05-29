@@ -1,0 +1,1 @@
+Select students from the table "students" whose names start with "Jo". Select the first name (first_name), last name (last_name), and date of birth (birth_date).

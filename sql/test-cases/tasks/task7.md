@@ -1,0 +1,1 @@
+Select the names and surnames of students, their courses. Output the first name (first_name), last name (last_name), and course name (course_name) using the tables "students" and "courses".

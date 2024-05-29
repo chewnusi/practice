@@ -1,0 +1,4 @@
+SELECT city, COUNT(student_id) AS num_students
+FROM studentLocations
+GROUP BY city
+HAVING COUNT(student_id) > 5;

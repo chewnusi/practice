@@ -1,0 +1,3 @@
+SELECT COUNT(student_id) AS total_math_students
+FROM courses
+WHERE course_name = 'Mathematics';

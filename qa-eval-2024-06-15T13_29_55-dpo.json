@@ -1,0 +1,182 @@
+[
+  {
+    "chosen": [
+      "[\n    {\n        \"Sign up for Microsoft Teams\": 9,\n        \"Comment\": \"Well-formulated and contains a process. Could be more concise by removing 'for Microsoft Teams'.\"\n    },\n    {\n        \"Sign in with an existing account\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Edit user profile\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Create a new team\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Edit team settings\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Add members to a team\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Send a message to a team channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Add files to a team channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Add reactions to a message in a team channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Reply in a thread to a message in a team channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_1.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Record audio in a private chat\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Schedule a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Join a scheduled meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Share screen during a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Start a video call\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Add tabs to a team channel\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Create a poll in a team channel\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Use @mentions in a message\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Set a status message\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Search for messages and files\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_2.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Create a private channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Edit channel settings\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Delete a message in a channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Pin a message in a channel\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Start a group chat\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Add participants to a group chat\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Send an emoji in a chat\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Add a GIF to a message\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Send a file in a private chat\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_3.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Mark a message as important\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Create a new team meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Invite external users to a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Mute all participants in a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Change meeting background\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Record a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Access meeting recordings\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Create a breakout room in a meeting\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Close a breakout room\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Add a OneNote notebook to a team\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    },\n    {\n        \"Integrate a third-party app\": 10,\n        \"Comment\": \"Well-formulated according to the requirements.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_4.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Send a code snippet in a chat\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Use voice commands to send a message\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Translate a message in a chat\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Tag a location in a message\": 8,\n        \"Comment\": \"Well-formulated but tagging a location is not a common feature in Microsoft Teams.\"\n    },\n    {\n        \"Create a live event\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Moderate a live event\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"End a live event\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Create a recurring meeting\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    },\n    {\n        \"Edit a recurring meeting\": 10,\n        \"Comment\": \"Well-formulated and covers a commonly used feature.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_5.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Cancel a meeting\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Join a meeting without an account\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Use Together mode in a meeting\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Raise hand in a meeting\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Lower hand in a meeting\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Turn on live captions\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Turn off live captions\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Blur background during a call\": 10,\n        \"Comment\": \"Well-formulated and meets all requirements.\"\n    },\n    {\n        \"Change chat theme\": 8,\n        \"Comment\": \"The feature 'Change chat theme' is not a common functionality in Microsoft Teams. Consider replacing it with a more relevant feature like 'Change chat settings'.\"\n    },\n    {\n        \"Add a webhook\": 7,\n        \"Comment\": \"The feature 'Add a webhook' is not commonly used by all users. Consider replacing it with a more relevant feature like 'Add a tab to a channel'.\"\n    },\n    {\n        \"Create a task in To Do\": 6,\n        \"Comment\": \"The feature 'Create a task in To Do' is not a core functionality of Microsoft Teams. Consider replacing it with a more relevant feature like 'Create a task in Planner'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_6.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Створення нової команди\": 9,\n        \"Comment\": \"Well-formulated and contains a clear action. Could be improved by specifying the context of the action.\"\n    },\n    {\n        \"Редагування налаштувань команди\": 9,\n        \"Comment\": \"Well-formulated and contains a clear action. Could be improved by specifying the context of the action.\"\n    },\n    {\n        \"Додавання учасників до команди\": 9,\n        \"Comment\": \"Well-formulated and contains a clear action. Could be improved by specifying the context of the action.\"\n    },\n    {\n        \"Надіслати повідомлення до каналу команди\": 8,\n        \"Comment\": \"Contains a clear action but could be more concise. Consider rephrasing to 'Надсилання повідомлення до каналу'.\"\n    },\n    {\n        \"Додати файли до каналу команди\": 8,\n        \"Comment\": \"Contains a clear action but could be more concise. Consider rephrasing to 'Додавання файлів до каналу'.\"\n    },\n    {\n        \"Додавання реакцій до повідомлення у каналі команди\": 8,\n        \"Comment\": \"Contains a clear action but could be more concise. Consider rephrasing to 'Додавання реакцій до повідомлення'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_7.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Відповісти у нитці на повідомлення в каналі команди\": 9,\n        \"Comment\": \"Well-formulated and contains a clear action. Could be slightly more concise.\"\n    },\n    {\n        \"Запис аудіо у приватному чаті\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Запланувати зустріч\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Приєднатися до запланованої зустрічі\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Демонстрація екрану під час зустрічі\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Розпочати відеодзвінок\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Додати вкладки до каналу команди\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Створити опитування у каналі команди\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Використовувати @mentions у повідомленні\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Встановити статусне повідомлення\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    },\n    {\n        \"Пошук повідомлень та файлів\": 10,\n        \"Comment\": \"Perfectly formulated according to the requirements.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/CORRECT_8.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"User registration\": 9,\n        \"Comment\": \"Well-formulated and contains a process. Could be more specific, e.g., 'Register User'.\"\n    },\n    {\n        \"Existing account\": 5,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Login with Existing Account'.\"\n    },\n    {\n        \"Profile\": 6,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Update Profile'.\"\n    },\n    {\n        \"Team\": 5,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Create Team'.\"\n    },\n    {\n        \"Settings\": 6,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Update Settings'.\"\n    },\n    {\n        \"Members\": 5,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Add Members'.\"\n    },\n    {\n        \"Messages\": 7,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Send Messages'.\"\n    },\n    {\n        \"Files\": 7,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Upload Files'.\"\n    },\n    {\n        \"Reactions\": 7,\n        \"Comment\": \"Contains a feature but lacks a process. Could be improved to 'Add Reactions'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/INCORRECT_1.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Threads\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Manage Threads'.\"\n    },\n    {\n        \"Audio\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Configure Audio'.\"\n    },\n    {\n        \"Meetings\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Schedule Meetings'.\"\n    },\n    {\n        \"Joining\": 7,\n        \"Comment\": \"Contains an action but lacks specificity. Could be improved to 'Join Meetings'.\"\n    },\n    {\n        \"Screen sharing\": 8,\n        \"Comment\": \"Contains an action and is specific. Could be improved to 'Start Screen Sharing' for clarity.\"\n    },\n    {\n        \"Video calls\": 8,\n        \"Comment\": \"Contains an action and is specific. Could be improved to 'Make Video Calls' for clarity.\"\n    },\n    {\n        \"Tabs\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Manage Tabs'.\"\n    },\n    {\n        \"Polls\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Create Polls'.\"\n    },\n    {\n        \"Mentions\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Use Mentions'.\"\n    },\n    {\n        \"Status\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Update Status'.\"\n    },\n    {\n        \"Search\": 5,\n        \"Comment\": \"Contains only the feature name. Needs to include an action or process, e.g., 'Perform Search'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/INCORRECT_2.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Create a repository\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Create a Team'.\"\n    },\n    {\n        \"Fork a repository\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Join a Team'.\"\n    },\n    {\n        \"Merge a pull request\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Send a Message'.\"\n    },\n    {\n        \"Run a CI/CD pipeline\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Schedule a Meeting'.\"\n    },\n    {\n        \"Deploy to Kubernetes\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Share a File'.\"\n    },\n    {\n        \"Set up a virtual machine\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Add a Tab'.\"\n    },\n    {\n        \"Create an EC2 instance\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Start a Video Call'.\"\n    },\n    {\n        \"Manage S3 buckets\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Create a Channel'.\"\n    },\n    {\n        \"Configure VPC\": 1,\n        \"Comment\": \"This feature is not related to Microsoft Teams. Replace with a commonly used Teams feature like 'Manage Team Settings'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/INCORRECT_3.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  },
+  {
+    "chosen": [
+      "[\n    {\n        \"Launch a Lambda function\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Start a meeting'.\"\n    },\n    {\n        \"Monitor cloud resources\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Monitor call quality'.\"\n    },\n    {\n        \"Create an Azure Resource Group\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Create a team'.\"\n    },\n    {\n        \"Deploy an ARM template\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Deploy a Teams app'.\"\n    },\n    {\n        \"Create a GCP project\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Create a channel'.\"\n    },\n    {\n        \"Configure IAM roles\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Configure team permissions'.\"\n    },\n    {\n        \"Run a BigQuery query\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Run a poll'.\"\n    },\n    {\n        \"Set up a data lake\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Set up a meeting'.\"\n    },\n    {\n        \"Analyze data with Redshift\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Analyze meeting attendance'.\"\n    },\n    {\n        \"Manage DNS settings\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Manage team settings'.\"\n    },\n    {\n        \"Use Git commands\": 1,\n        \"Comment\": \"Does not cover a feature of Microsoft Teams. Replace with a Teams-specific feature like 'Use chat commands'.\"\n    }\n]"
+    ],
+    "rejected": [],
+    "vars": {
+      "solutionFile": "./test-cases/INCORRECT_4.json"
+    },
+    "providers": [
+      "openai:chat:gpt-4o"
+    ],
+    "prompts": [
+      "async function ({ vars }) {\n  const mergedPrompt = prompt.replace('{{solution}}', fs.readFileSync(vars.solutionFile, 'utf8'));\n\n  return [\n    {\n      role: 'user',\n      content: mergedPrompt\n    },\n  ];\n}"
+    ]
+  }
+]

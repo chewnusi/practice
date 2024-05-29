@@ -1,0 +1,81 @@
+tests:
+  - description: '#1 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_1.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#2 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_2.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#3 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_3.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#4 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_4.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#5 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_5.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#6 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_6.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#7 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_7.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#8 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_8.json
+    assert:
+      - type: javascript
+        value: "!output.match(/: [2-5]/)&&!output.includes(': 1,')"
+  - description: '#1 INCORRECT (No process)'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_1.json
+    assert:
+      - type: javascript
+        value: "output.includes(': 1,') || output.includes(': 2') || output.includes(': 3') || output.includes(': 4') || output.includes(': 5')"
+  - description: '#2 INCORRECT (No process)'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_2.json
+    assert:
+      - type: javascript
+        value: "output.includes(': 1,') || output.includes(': 2') || output.includes(': 3') || output.includes(': 4') || output.includes(': 5')"
+  - description: '#3 INCORRECT (Not specific to Microsoft Teams)'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_3.json
+    assert:
+      - type: javascript
+        value: "output.includes(': 1,') || output.includes(': 2') || output.includes(': 3') || output.includes(': 4') || output.includes(': 5')"
+  - description: '#4 INCORRECT (Not specific to Microsoft Teams)'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_4.json
+    assert:
+      - type: javascript
+        value: "output.includes(': 1,') || output.includes(': 2') || output.includes(': 3') || output.includes(': 4') || output.includes(': 5')"
+providers:
+  - id: openai:chat:gpt-4o
+    config:
+      temperature: null
+      top_p: 0.05
+
+prompts: [prompt.js]
+output: output.json

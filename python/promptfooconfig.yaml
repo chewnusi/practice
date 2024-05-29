@@ -1,0 +1,75 @@
+tests:
+  - description: '#1 CORRECT'
+    vars:
+      solutionFile: ./test-cases/CORRECT_1.txt
+    assert:
+      - type: contains
+        value: 'has been accepted'                 
+  - description: '#1 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_1.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'       
+  - description: '#2 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_2.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'   
+  - description: '#3 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_3.txt
+    assert:
+      - type: contains
+        value: 'not been accepted' 
+  - description: '#4 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_4.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'     
+  - description: '#5 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_5.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'       
+  - description: '#6 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_6.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'   
+  - description: '#7 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_7.txt
+    assert:
+      - type: contains
+        value: 'not been accepted' 
+  - description: '#8 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_8.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'     
+  - description: '#9 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_9.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'       
+  - description: '#10 INCORRECT'
+    vars:
+      solutionFile: ./test-cases/INCORRECT_10.txt
+    assert:
+      - type: contains
+        value: 'not been accepted'   
+providers:
+  - id: openai:chat:gpt-4o
+    config:
+      temperature: 0.01
+      top_p: null
+
+prompts: [prompt.js]
+output: output.md

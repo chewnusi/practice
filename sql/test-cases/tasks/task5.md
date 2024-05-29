@@ -1,0 +1,1 @@
+Calculate the number of students from the "courses" table who are enrolled in the course "Mathematics". Assign the resulting column the name "total_math_students".

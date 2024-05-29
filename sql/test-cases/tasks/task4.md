@@ -1,0 +1,1 @@
+Select the IDs of students from the "studentLocations" table who reside in New York, Los Angeles, and Chicago. Select the student ID (student_id) and the city.

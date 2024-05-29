@@ -1,0 +1,1 @@
+Select students from the table "students" and sort them by enrollment date (enrollment_date) in descending order. Choose student ID (student_id), first name (first_name), last name (last_name), and enrollment date (enrollment_date).

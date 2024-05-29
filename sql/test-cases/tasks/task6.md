@@ -1,0 +1,1 @@
+Output the number of students for each city from the "studentLocations" table. Include only cities where there are more than 10 students. Display the number of students and the city name.
