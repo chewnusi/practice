@@ -1,6 +1,6 @@
 from cryptography.fernet import Fernet
 import json
-import getpass
+ 
 
 class PasswordRecord:
     def __init__(self, service, username, password):
@@ -33,8 +33,7 @@ class PasswordManager:
 
     def delete_record(self, service):
         if service in self.records:
-            del self.records
-[service]
+            del self.records[service]
         else:
             raise Exception(f"Service '{service}' not found.")
 
@@ -50,5 +49,4 @@ class PasswordManager:
             data = json.loads(self.cipher.decrypt(encrypted_data).decode())
             self.records = {service: PasswordRecord(service, info['username'], info['password']) for service, info in data.items()}
 
-def generate_key():
-    return Fernet.generate_key()
+ 

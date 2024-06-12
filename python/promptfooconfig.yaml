@@ -5,61 +5,61 @@ tests:
     assert:
       - type: contains
         value: 'has been accepted'                 
-  - description: '#1 INCORRECT'
+  - description: '#1 INCORRECT Incorrect Import Statements'
     vars:
       solutionFile: ./test-cases/INCORRECT_1.txt
     assert:
       - type: contains
         value: 'not been accepted'       
-  - description: '#2 INCORRECT'
+  - description: '#2 INCORRECT initializing the PasswordManager class without a valid key'
     vars:
       solutionFile: ./test-cases/INCORRECT_2.txt
     assert:
       - type: contains
         value: 'not been accepted'   
-  - description: '#3 INCORRECT'
+  - description: '#3 INCORRECT Forgetting the __str__ method in the PasswordRecord class, resulting in less informative print outputs'
     vars:
       solutionFile: ./test-cases/INCORRECT_3.txt
     assert:
       - type: contains
         value: 'not been accepted' 
-  - description: '#4 INCORRECT'
+  - description: '#4 INCORRECT Using self.records[service] without checking if the key exists, potentially raising a KeyError'
     vars:
       solutionFile: ./test-cases/INCORRECT_4.txt
     assert:
       - type: contains
         value: 'not been accepted'     
-  - description: '#5 INCORRECT'
+  - description: '#5 INCORRECT Not using the correct mode when opening files. Failing to close the file properly if an exception occurs during file operations.'
     vars:
       solutionFile: ./test-cases/INCORRECT_5.txt
     assert:
       - type: contains
         value: 'not been accepted'       
-  - description: '#6 INCORRECT'
+  - description: '#6 INCORRECT Forgetting to encode/decode data. Using an incorrect or invalid key for decryption'
     vars:
       solutionFile: ./test-cases/INCORRECT_6.txt
     assert:
       - type: contains
         value: 'not been accepted'   
-  - description: '#7 INCORRECT'
+  - description: '#7 INCORRECT Not handling file-related exceptions such as FileNotFoundError or IOError.'
     vars:
       solutionFile: ./test-cases/INCORRECT_7.txt
     assert:
       - type: contains
         value: 'not been accepted' 
-  - description: '#8 INCORRECT'
+  - description: '#8 INCORRECT Incorrectly updating or accessing the self.records dictionary. Overwriting existing records without warning or confirmation.'
     vars:
       solutionFile: ./test-cases/INCORRECT_8.txt
     assert:
       - type: contains
         value: 'not been accepted'     
-  - description: '#9 INCORRECT'
+  - description: '#9 INCORRECT Not validating user input. Using hardcoded or insecure methods to manage the encryption key.'
     vars:
       solutionFile: ./test-cases/INCORRECT_9.txt
     assert:
       - type: contains
         value: 'not been accepted'       
-  - description: '#10 INCORRECT'
+  - description: '#10 INCORRECT Typographical errors. Forgetting to handle edge cases, such as empty service names or passwords.'
     vars:
       solutionFile: ./test-cases/INCORRECT_10.txt
     assert:
